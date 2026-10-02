@@ -9,11 +9,12 @@ import {
 import * as maplibregl from 'maplibre-gl'
 import { setWorkerUrl } from 'maplibre-gl'
 import { ArrayBufferTarget, Muxer } from 'mp4-muxer'
+import maplibreWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?url'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import './App.css'
 import { findPointAtMovingTime } from './routeMath'
 
-setWorkerUrl(new URL('../node_modules/maplibre-gl/dist/maplibre-gl-worker.mjs', import.meta.url).toString())
+setWorkerUrl(maplibreWorkerUrl)
 
 type DurationOption = 15 | 30 | 45 | 60
 

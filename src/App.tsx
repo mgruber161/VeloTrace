@@ -400,13 +400,13 @@ function App() {
     } as maplibregl.MapOptions
 
     const mapInstance = new maplibregl.Map(mapOptions)
-    mapInstance.setPixelRatio(Math.min(window.devicePixelRatio || 1, 4))
+    mapInstance.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2))
     mapInstance.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right')
     mapRef.current = mapInstance
 
     mapInstance.on('load', () => {
       mapInstance.resize()
-      mapInstance.setPixelRatio(Math.min(window.devicePixelRatio || 1, 4))
+      mapInstance.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2))
     })
 
     return () => {
@@ -418,7 +418,20 @@ function App() {
   useEffect(() => {
     const map = mapRef.current
     if (!map) return
-    map.setStyle(settings.mapStyle === 'satellite' ? (satelliteMapStyle as unknown as maplibregl.StyleSpecification) : (standardMapStyle as unknown as maplibregl.StyleSpecification))
+
+    const applyStyle = () => {
+      map.setStyle(settings.mapStyle === 'satellite' ? (satelliteMapStyle as unknown as maplibregl.StyleSpecification) : (standardMapStyle as unknown as maplibregl.StyleSpecification))
+    }
+
+    if (map.isStyleLoaded()) {
+      applyStyle()
+    } else {
+      map.once('load', applyStyle)
+    }
+
+    return () => {
+      map.off('load', applyStyle)
+    }
   }, [settings.mapStyle])
 
   useEffect(() => {
@@ -662,7 +675,7 @@ function App() {
       return
     }
 
-    map.setPixelRatio(Math.min(window.devicePixelRatio || 1, 4))
+    map.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2))
     map.resize()
 
     await waitForMapReady(map, 15000).catch((error) => {

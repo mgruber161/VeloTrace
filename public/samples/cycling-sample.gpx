@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="VeloTrace" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <name>Sunset Loop</name>
+  </metadata>
+  <trk>
+    <name>Sunset Loop</name>
+    <trkseg>
+      <trkpt lat="37.7780" lon="-122.4210">
+        <ele>10</ele>
+        <time>2026-04-09T18:00:00Z</time>
+      </trkpt>
+      <trkpt lat="37.7790" lon="-122.4200">
+        <ele>12</ele>
+        <time>2026-04-09T18:02:00Z</time>
+      </trkpt>
+      <trkpt lat="37.7804" lon="-122.4188">
+        <ele>16</ele>
+        <time>2026-04-09T18:04:00Z</time>
+      </trkpt>
+      <trkpt lat="37.7820" lon="-122.4170">
+        <ele>24</ele>
+        <time>2026-04-09T18:06:00Z</time>
+      </trkpt>
+      <trkpt lat="37.7835" lon="-122.4155">
+        <ele>31</ele>
+        <time>2026-04-09T18:08:00Z</time>
+      </trkpt>
+      <trkpt lat="37.7846" lon="-122.4138">
+        <ele>36</ele>
+        <time>2026-04-09T18:10:00Z</time>
+      </trkpt>
+      <trkpt lat="37.7850" lon="-122.4122">
+        <ele>40</ele>
+        <time>2026-04-09T18:12:00Z</time>
+      </trkpt>
+      <trkpt lat="37.7862" lon="-122.4101">
+        <ele>44</ele>
+        <time>2026-04-09T18:14:00Z</time>
+      </trkpt>
+      <trkpt lat="37.7878" lon="-122.4080">
+        <ele>48</ele>
+        <time>2026-04-09T18:16:00Z</time>
+      </trkpt>
+      <trkpt lat="37.7890" lon="-122.4062">
+        <ele>52</ele>
+        <time>2026-04-09T18:18:00Z</time>
+      </trkpt>
+      <trkpt lat="37.7895" lon="-122.4040">
+        <ele>58</ele>
+        <time>2026-04-09T18:20:00Z</time>
+      </trkpt>
+      <trkpt lat="37.7878" lon="-122.4018">
+        <ele>61</ele>
+        <time>2026-04-09T18:22:00Z</time>
+      </trkpt>
+      <trkpt lat="37.7856" lon="-122.4004">
+        <ele>57</ele>
+        <time>2026-04-09T18:24:00Z</time>
+      </trkpt>
+      <trkpt lat="37.7830" lon="-122.4009">
+        <ele>50</ele>
+        <time>2026-04-09T18:26:00Z</time>
+      </trkpt>
+      <trkpt lat="37.7812" lon="-122.4027">
+        <ele>45</ele>
+        <time>2026-04-09T18:28:00Z</time>
+      </trkpt>
+      <trkpt lat="37.7798" lon="-122.4045">
+        <ele>42</ele>
+        <time>2026-04-09T18:30:00Z</time>
+      </trkpt>
+      <trkpt lat="37.7785" lon="-122.4069">
+        <ele>39</ele>
+        <time>2026-04-09T18:32:00Z</time>
+      </trkpt>
+      <trkpt lat="37.7772" lon="-122.4100">
+        <ele>33</ele>
+        <time>2026-04-09T18:34:00Z</time>
+      </trkpt>
+      <trkpt lat="37.7764" lon="-122.4140">
+        <ele>28</ele>
+        <time>2026-04-09T18:36:00Z</time>
+      </trkpt>
+      <trkpt lat="37.7775" lon="-122.4180">
+        <ele>24</ele>
+        <time>2026-04-09T18:38:00Z</time>
+      </trkpt>
+      <trkpt lat="37.7780" lon="-122.4210">
+        <ele>10</ele>
+        <time>2026-04-09T18:40:00Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
